@@ -38,7 +38,7 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .header.fixed {
@@ -530,6 +530,8 @@ p {
 .burger {
 	display: none;
 	padding: 10px 2px;
+	height: 35px;
+
 
 	background: none;
 	border: 0;
@@ -588,14 +590,17 @@ p {
 	.nav {
 		display: none;
 		width: 100%;
+		
 		flex-direction: column;
 
 		background-color: #31344e;
-		text-align: right;
+		text-align: center;
 
 		position: absolute;
-		top: 100%;
-		right: 0;
+		z-index: 10000;
+		top: 70px;
+		font-size: 33px;
+		
 	}
 	
 	.nav.show {
@@ -603,9 +608,13 @@ p {
 	}
 
 	.nav_link {
-		padding: 9px 15px;
+		margin-left: 0px;
+		height: 90px;
+		padding-top: 30px;
 	}
-
+	.nav_link:last-child{
+		margin-bottom: 50px;
+	}
 	/* Burger */ 
 	.burger {
 		display: block;
